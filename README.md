@@ -48,23 +48,30 @@ PYTHONPATH=src python -m pytest tests/ -v
 chess_agent/
 ├── src/
 │   ├── chess/
-│   │   ├── __init__.py
-│   │   ├── board.py
 │   │   ├── engines/
 │   │   │   ├── __init__.py
 │   │   │   ├── base.py
 │   │   │   └── minimax.py
-│   │   └── pieces/
-│   │       ├── __init__.py
-│   │       ├── bishop.py
-│   │       ├── king.py
-│   │       ├── knight.py
-│   │       ├── pawn.py
-│   │       ├── queen.py
-│   │       └── rook.py
+│   │   ├── pieces/
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   ├── bishop.py
+│   │   │   ├── king.py
+│   │   │   ├── knight.py
+│   │   │   ├── pawn.py
+│   │   │   ├── queen.py
+│   │   │   └── rook.py
+│   │   ├── ui/
+│   │   │   ├── __init__.py
+│   │   │   ├── display.py
+│   │   │   └── input_handler.py
+│   │   ├── utils/
+│   │   │   ├── __init__.py
+│   │   │   └── move_parser.py
+│   │   ├── __init__.py
+│   │   └── board.py
 │   └── main.py
 ├── tests/
-│   ├── __init__.py
 │   ├── engines/
 │   │   ├── __init__.py
 │   │   ├── test_base.py
@@ -77,13 +84,20 @@ chess_agent/
 │   │   ├── test_pawn.py
 │   │   ├── test_queen.py
 │   │   └── test_rook.py
-│   ├── test_board.py
-│   └── requirements.txt
-├── .gitignore
+│   ├── ui/
+│   │   ├── test_display.py
+│   │   └── test_input_handler.py
+│   ├── utils/
+│   │   └── test_move_parser.py
+│   ├── requirements.txt
+│   └── test_board.py
+├── CONTRIBUTING.md
+├── LICENSE
 ├── README.md
 ├── requirements.txt
 └── setup.py
 ```
+
 
 ## Features
 
